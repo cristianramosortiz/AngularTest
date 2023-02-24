@@ -1,0 +1,9 @@
+<h1>Fecha del dia</h1>
+<div class="text-layout">    
+    <ul>        
+        <li> pipe no personalisado del mes {{fecha | date:'MMMM' : '' : 'es-CL' }} de {{ fecha | date: 'YYYY'}} </li>    
+    </ul>
+    <ul>
+        <p> pipe personalisado del mes de hoy : {{currentDate | DateMonth | titlecase }} de {{currentDate | DateYear }}</p>
+    </ul>
+</div>
